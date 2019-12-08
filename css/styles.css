@@ -1,0 +1,76 @@
+/* name: Pitou Teng
+email: pitou_teng@student.uml.edu
+gui i - a7 */
+
+/* add background color and margin */
+body{
+  background-color: #7FC6B6;
+  margin: 30px;
+}
+
+/* add some margin */
+table{
+  margin-top: 30px;
+}
+
+th{
+  background-color: #E27D60;
+  font-size: smaller;
+  margin: 0;
+  padding: 0;
+}
+td{
+  background-color: #85CDCA;
+  font-size: smaller;
+  margin: 0;
+  padding: 0;
+}
+
+input{
+  padding: 0px;
+  margin: 0px;
+}
+
+/* rule for check pattern on multiplication table */
+.evenRow td:nth-child(2n+0),
+.oddRow td:nth-child(2n+1){
+  background: #ECAD81;
+}
+
+label.error {
+  margin: 0;
+  padding: 0;
+  font-size: smaller;
+  color: #a94442;
+  border-color: #ebccd1;
+}
+
+/* give pink color to btn */
+.btn{
+  background-color: #c38d9e;
+  border-color: #c38d9e;
+}
+.btn:hover{
+  background-color: #AB7B8A;
+  border-color: #AB7B8A;
+
+}
+
+/* styling tab */
+#tabs {
+    border-color: #c38d9e;
+    background:#7FC6B6;
+    margin-top: 20px;
+    /* add scrolling bar to tab */
+    height:100%;
+    overflow-y:auto;
+}
+
+/* give color styling */
+.ui-widget-header {
+  background:#7FC6B6;
+  border: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active {
+ border:1px solid #aaa; background:#c38d9e none;
+}

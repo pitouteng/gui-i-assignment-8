@@ -1,0 +1,77 @@
+<!-- name: Pitou Teng
+email: pitou_teng@student.uml.edu
+gui i - a7 -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Assignment 6</title>
+
+  <!-- linking bootstrap and my css file -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" integrity="sha256-p6xU9YulB7E2Ic62/PX+h59ayb3PBJ0WFTEQxq0EjHw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <!-- title -->
+  <h4>Multplication Table - Enter range number in no order</h4>
+  <p>&copy; 2019 Pitou Teng</p>
+  <form id="myForm" name="mult">
+    <!-- Multiplier section -->
+  Multiplier:
+    <div class="form-group col-sm-4">
+      <input type="text" name="first_box_multiplier" class="form-control">
+      <div id="slider1" class="m-2">
+      </div>
+    </div>
+
+
+    <div class="form-group col-sm-4">
+      <input type="text" name="sec_box_multiplier" class="form-control">
+      <div id="slider2" class="m-2">
+      </div>
+    </div>
+
+    <!-- multiplicand section -->
+  Multiplicand  :
+    <div class="form-group col-sm-4">
+      <input type="text" name="first_box_multiplicand" class="form-control">
+      <div id="slider3" class="m-2">
+      </div>
+    </div>
+
+    <div class="form-group col-sm-4">
+      <input type="text" name="sec_box_multiplicand" class="form-control">
+      <div id="slider4" class="m-2">
+      </div>
+    </div>
+
+    <input id="save" type="button" value="Save" class="btn btn-primary">
+
+  </form>
+  <div id="tabs">
+   <ul>
+   <li><a href="#currentTab">Current</a></li>
+   </ul>
+   <div id="currentTab">
+   </div>
+ </div>
+
+  <!-- linking jquery, jquery validation and my javscript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    $(document).ready(function() {
+      validate();
+      slider();
+      tabs();
+    });
+  </script>
+</body>
+</html>
