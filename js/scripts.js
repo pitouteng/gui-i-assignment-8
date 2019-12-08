@@ -183,6 +183,19 @@ function tabs() {
     }
   });
 
+  // remove all save tab
+  $("#removeTab").click(function() {
+    $( "li" ).each(function( index ) {
+      if (index != 0)
+        $( this ).remove();
+    });
+    //  using filter and regex to select all tab content with the table
+    $("div").filter(function () {
+      return this.id.match(/tab\d+/);
+    }).remove();
+    $("#tabs").tabs("refresh");
+  });
+
   // add the remove tab button
   $( "#tabs" ).tabs().on( "click", "span.ui-icon-close", function() {
     var panelId = $( this ).closest( "li" ).remove().attr( "aria-controls" );
